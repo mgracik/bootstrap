@@ -19,6 +19,14 @@ sudo apt-get update
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get install -y oracle-java7-set-default
 
+# leiningen
+{
+  cd $HOME/bin &&
+  wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein &&
+  chmod a+x lein &&
+  ./lein;
+}
+
 # vim
 git clone https://github.com/mgracik/vim-config.git
 { cd vim-config && ./vim-install.sh; }
