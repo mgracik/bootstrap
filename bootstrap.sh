@@ -32,6 +32,11 @@ sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get update
 sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
 
+# setup emacs for clojure
+test -f $HOME/.emacs && rm $HOME/.emacs
+test -d $HOME/.emacs.d && rm -rf $HOME/.emacs.d
+git clone https://github.com/flyingmachine/emacs-for-clojure.git $HOME/.emacs.d && rm -rf $HOME/.emacs.d/.git
+
 # vim
 git clone https://github.com/mgracik/vim-config.git
 { cd vim-config && ./vim-install.sh; }
