@@ -27,6 +27,11 @@ sudo apt-get install -y oracle-java7-set-default
   ./lein;
 }
 
+# emacs
+sudo add-apt-repository -y ppa:cassou/emacs
+sudo apt-get update
+sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
+
 # vim
 git clone https://github.com/mgracik/vim-config.git
 { cd vim-config && ./vim-install.sh; }
