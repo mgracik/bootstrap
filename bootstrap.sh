@@ -27,6 +27,11 @@ sudo apt-get install -y oracle-java7-set-default
   ./lein;
 }
 
+# enable cider-nrepl
+cat <<EOF > $HOME/.lein/profiles.clj
+{:user {:plugins [[cider/cider-nrepl "0.7.0"]]}}
+EOF
+
 # emacs
 sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get update
