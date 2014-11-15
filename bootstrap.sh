@@ -46,8 +46,8 @@ test -d $HOME/.emacs.d && rm -rf $HOME/.emacs.d
 git clone https://github.com/flyingmachine/emacs-for-clojure.git $HOME/.emacs.d && rm -rf $HOME/.emacs.d/.git
 
 # vim
-git clone https://github.com/mgracik/vim-config.git
-{ cd vim-config && ./vim-install.sh; }
+git clone https://github.com/mgracik/vim-config.git $HOME/vim-config
+( cd $HOME/vim-config && ./vim-install.sh; )
 
 # misc
 sudo apt-get install -y mc unrar irssi
