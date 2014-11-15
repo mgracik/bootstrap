@@ -19,6 +19,9 @@ sudo apt-get update
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get install -y oracle-java7-set-default
 
+# base dirs
+mkdir $HOME/bin
+
 # leiningen
 (
   cd $HOME/bin &&
@@ -48,6 +51,3 @@ git clone https://github.com/mgracik/vim-config.git
 
 # misc
 sudo apt-get install -y mc unrar irssi
-
-# default dirs
-mkdir $HOME/bin
