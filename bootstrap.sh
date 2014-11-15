@@ -20,12 +20,12 @@ sudo apt-get install -y oracle-java7-installer
 sudo apt-get install -y oracle-java7-set-default
 
 # leiningen
-{
+(
   cd $HOME/bin &&
   wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein &&
   chmod a+x lein &&
   ./lein;
-}
+)
 
 # enable cider-nrepl
 cat <<EOF > $HOME/.lein/profiles.clj
