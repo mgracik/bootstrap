@@ -3,7 +3,7 @@
 set -x
 
 GITNAME="Martin Gracik"
-GITEMAIL="martin@gracik.me"
+GITEMAIL="mgracik@users.noreply.github.com"
 
 # git
 sudo apt-get install -y git git-email git-doc git-man
